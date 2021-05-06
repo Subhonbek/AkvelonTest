@@ -1,0 +1,33 @@
+
+.slider{
+  position: relative;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-self: center;
+  align-items: center;
+}
+
+.image{
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+.left-arrow{
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 2rem;
+  color: #000;
+  cursor: pointer;
+  user-select: none;
+}
+.right-arrow{
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 2rem;
+  color: #000;
+  cursor: pointer;
+  user-select: none;
+}
