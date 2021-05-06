@@ -21,14 +21,12 @@ const SliderImage = (props) => {
 
     return (
         <div className={"slider"}>
+            {!(current === 0) &&
+            <div>
+                <FaArrowLeft className={"left-arrow"} onClick={prevSlide}/>
+            </div>
+            }
 
-            {!(current === 0) ? (
-                    <div>
-                        <FaArrowLeft className={"left-arrow"} onClick={prevSlide}/>
-                    </div>) :
-                (<div>
-
-                </div>)}
             <div>
                 {
                     SliderData.map((slide, index) => {
@@ -39,13 +37,12 @@ const SliderImage = (props) => {
                     })
                 }
             </div>
-            {!(current === length - 1) ? (
-                    <div>
-                        <FaArrowRight className={"right-arrow"} onClick={nextSlide}/>
-                    </div>) :
-                (<div>
+            {!(current === length - 1) &&
+            <div>
+                <FaArrowLeft className={"right-arrow"} onClick={nextSlide}/>
+            </div>
+            }
 
-                </div>)}
 
         </div>
     );
