@@ -26,7 +26,7 @@ const SliderImage = (props) => {
                 <FaArrowLeft className={"left-arrow"} onClick={prevSlide}/>
             </div>
             }
-
+            {(current === 0) && <div></div>}
             <div>
                 {
                     SliderData.map((slide, index) => {
@@ -39,7 +39,7 @@ const SliderImage = (props) => {
             </div>
             {!(current === length - 1) &&
             <div>
-                <FaArrowLeft className={"right-arrow"} onClick={nextSlide}/>
+                <FaArrowRight className={"right-arrow"} onClick={nextSlide}/>
             </div>
             }
 
