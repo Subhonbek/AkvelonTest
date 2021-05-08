@@ -11,7 +11,7 @@ const FormSignup = () => {
             <form onSubmit={handleSubmit} className='form' noValidate>
 
                 <h1>
-                    Get started
+                    Registration
                 </h1>
 
                 <div className='form-inputs'>
@@ -50,11 +50,11 @@ const FormSignup = () => {
                     />
                     {errors.password && <p>{errors.password}</p>}
                 </div>
-
-                <button className='form-input-btn' type='submit'>
-                    Sign up
-                </button>
-
+                <div className='form-inputs'>
+                    <button className='form-input-btn' type='submit'>
+                        Sign up
+                    </button>
+                </div>
             </form>
         </div>
     );

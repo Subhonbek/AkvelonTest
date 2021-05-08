@@ -2,7 +2,6 @@
     margin: 100px auto;
     width: 70%;
     position: relative;
-    border-radius: 10px;
     height: 600px;
     display: grid;
     grid-template-columns: 1fr;
@@ -11,7 +10,7 @@
 .form-content {
     border-radius: 10px;
     position: relative;
-    background: rgb(17, 17, 17);
+    background: #595959;
 }
 
 .form {
@@ -28,7 +27,7 @@
 }
 
 .form h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: start;
     width: 80%;
     margin-bottom: 1rem;

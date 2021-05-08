@@ -11,10 +11,10 @@ function convertToBinary(x) {
 }
 
 function reverseNumber(n) {
-    n=String(n);
-    let result= '';
-    for (let i=n.length-1; i>=0; i--){
-        result+=n[i];
+    n = String(n);
+    let result = '';
+    for (let i = n.length - 1; i >= 0; i--) {
+        result += n[i];
     }
     return result;
 }
